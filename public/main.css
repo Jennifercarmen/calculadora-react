@@ -1,0 +1,15 @@
+body, div, section, a, span, p, button, input {
+    font-family: Tahoma;
+    line-height: 1;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  #root {
+    width: 222px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #EEEEEE;
+    border: 1px solid #E0E0E0;
+    height: 200px;
+  }
