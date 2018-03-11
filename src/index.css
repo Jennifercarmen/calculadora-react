@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: lightslategrey;
+}
+.App{
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  background: rgb(194, 202, 228);
+  box-shadow: 0 0 5px;
+  margin-top: 100px;
+}
+.value-container{
+  padding-top: 1.75%;
+}
+.value-container input{
+  border-radius: 5px;
+  display: block;
+  width: 95%;
+  border: 1px solid blueviolet;
+  height: 30px;
+  text-align: right;
+  padding: 0 10px;
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 700;
+  color: lightslategrey;
+}
+.buttons-container{
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.buttons-container button{
+  border-radius: 5px;
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  margin: 2%;
+  border: 1px solid coral;
+  outline: none;
+  background: #d89b9b;
+  color: white;
+  font-weight: 700;
+}
+.buttons-container button:hover{
+  box-shadow: 0 0 5px;
+}

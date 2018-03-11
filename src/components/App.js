@@ -1,36 +1,37 @@
-import React from 'react'
-import Botones from '../components/Botones'
-// import Result from '../containers/Result'
-// import Numbers from '../containers/Numbers'
-// import Operations from './Operations'
+import React, { Component } from 'react';
 
-var Buttons = ["7", "8", "9", "+", "4", "5", "6", "-",
-  "3", "2", "1", "*", "0", ".", "=", "/"];
+class App extends Component {
+  constructor(props){
+    super(props)
+  }
 
-const App = () => (
-  <div>
-    {/* <Result />
-    <Numbers />
-    <Operations /> */}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div id="Calculadora" class="col-md-6">
-          <div class="panel panel-primary" style="margin-top: 10%;">
-            <div class="panel-heading">Calculadora</div>
-            <div class="panel-body">
-              <div class="col-md-12" style="margin-bottom: 10px;">
-                <div id="idCalculadora">
-                  <Botones data={Buttons}/>
-                </div>
-              </div>
-            </div>
-          </div>
+  render() {
+    const { value, btns, addElem, clear, equal } = this.props;
+    return (
+      <div className="App">
+        <div className="value-container">
+          <input type="text" value={value} />
         </div>
-        <div class="col-md-3"></div>
+        <div className="buttons-container">
+          {btns.map((item, key) => {
+            if(item === "C"){
+              return(
+                <button onClick={ clear.bind(this) } key={key}>{item}</button>
+              )
+            } else if(item === "="){
+              return(
+                <button onClick={ equal.bind(this, value) } key={key}>{item}</button>
+              )
+            } else {
+              return(
+                <button onClick={ addElem.bind(this, item) } key={key}>{item}</button>
+              )
+            }
+          })}
+        </div>
       </div>
-    </div>
-  </div>
-)
+    );
+  }
+}
 
 export default App

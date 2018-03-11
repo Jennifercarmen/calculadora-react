@@ -4,15 +4,14 @@
   "private": true,
   "devDependencies": {
     "enzyme": "3.3.0",
-    "react-scripts": "^1.0.2",
-    "redux-devtools": "^3.4.1"
+    "react-scripts": "^1.0.2"
   },
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-redux": "^5.0.7",
-    "redux": "^3.7.2"
+    "react-redux": "^5.0.5",
+    "redux": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
