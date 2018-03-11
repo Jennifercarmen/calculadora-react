@@ -2,17 +2,15 @@ import React from 'react'
 import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import App from './components/App'
-import reducer from './reducers'
+import './index.css';
+import calcReducer from './reducers/calcReducer'
+import Calc from './containers/Calc'
 
-const store = createStore(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
+const store = createStore(calcReducer);
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+      <Calc />
+    </Provider>, 
+    document.getElementById('root')
 )
