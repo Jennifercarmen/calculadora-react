@@ -1,7 +1,7 @@
 # Proyecto Calculadora
 
 En el presente proyecto se desarrollo una calculadora para poner en practica los conceptos de REACT Y REDUX, haciendo una integración de ambos.
-Esta plantilla de proyecto se creó con la aplicación [Create React App](https://github.com/facebookincubator/create-react-app).
+Este proyecto se creó con la aplicación [Create React App](https://github.com/facebookincubator/create-react-app).
 ## Cómo ejecutar la aplicación localmente
 Ingresar a la carpeta e instalar 
 ```
@@ -38,6 +38,8 @@ States, Actions y Reducers
 
 ## WebSite
 Puede ver una versión en vivo de este proyecto aquí: https://Jennifercarmen.github.io/calculadora-react-redux
+
+
 ![pagina](public/assets/docs/calculadora.PNG)
 
 
