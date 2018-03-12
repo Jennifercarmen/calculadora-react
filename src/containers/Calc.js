@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import App from '../components/App'
+
 /* utilizando funciones expressions e internamente funciones anonimas con arrow functions */
 // indica cómo transformar el estado actual del store Redux en los props que desea pasar a un componente de presentación
 const mapStateToProps = (state) => {

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-
   render() {
     // utilizando destruturing ordenado alfabeticamente
     const { addElem, btns, clear, equal, value } = this.props;
@@ -26,7 +25,6 @@ class App extends Component {
             } else if (item === "=") {
               // Para obtener el resultado final de la operacion a realizar(click en =)
               return (
-
                 // key={key}>{item} -> Solo haga esto si los items no tienen ID estables
                 <button onClick={equal.bind(this, value)} key={key}>{item}</button>
               )
@@ -39,7 +37,6 @@ class App extends Component {
           })}
         </div>
         <div className="result-container">
-
         </div>
       </div>
     );
