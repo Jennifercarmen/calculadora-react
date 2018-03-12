@@ -72,6 +72,7 @@ body{
   border: 2px solid rgb(204, 0, 255);
   outline: none;
   background: #ffffff;
-  color: white;
+  color: black;
   font-weight: 700;
+  text-align: center;
 }

@@ -38,9 +38,7 @@ class App extends Component {
             }
           })}
         </div>
-        <div className="result-container">
-          
-        </div>
+        <input className="result-container" type="text" value={value}/>
       </div>
     );
   }
